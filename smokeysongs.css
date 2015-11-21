@@ -1,0 +1,69 @@
+body{
+  background-color: black;
+  color: white;
+}
+  
+#header{
+  background-color: white;
+}
+
+h1, h2{
+  text-align: center;
+  color: black;
+}
+ol {
+  width: 25%;
+  margin: 30px auto;
+}
+li{
+  margin: 10px;
+  cursor: pointer; cursor: hand;
+}
+
+#img-float-right{
+  float: right;
+}
+#img-float-right img{
+  border-radius: 135px;
+  border: orange 10px solid;
+  margin-right: 100px;
+}
+
+.center{
+  margin-top: 40px;
+  text-align: center;
+}
+.center a {
+  padding: 20px 42px;
+  margin: 0 auto;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  background-color: gray
+}
+ a:hover{
+  text-decoration: none;
+  background-color: #66CCFF;
+}
+.deleter{
+  margin-left: 5px;
+  padding: 2px 7px;
+  border: black solid 1px;
+  border-radius: 12px;
+  color: black;
+  text-decoration: none;
+  background-color: white;
+}
+.deleter:hover{
+  background-color: rgba(200, 0, 0, .7);
+}
+.song {
+  background-color: white;
+  border: black 1px solid;
+  text-align: center;
+  padding: 0 20px;
+  color: black;
+}
+.song:hover{
+  background-color: #66CCFF;;
+}
