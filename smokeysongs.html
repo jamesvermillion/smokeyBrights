@@ -5,62 +5,7 @@
 <!--head and title area-->
 <head>
 <title>Smokey Brights Album Sorter</title>
-<style>
-  h1, h2{
-  text-align: center;
-}
-ol {
-  width: 25%;
-  margin: 30px auto;
-}
-li{
-  margin: 10px;
-  //border: dashed blue 1px;
-  cursor: pointer; cursor: hand;
-}
-
-.center{
-  margin-top: 40px;
-  text-align: center;
-}
-.center a {
-  padding: 20px 42px;
-  margin: 0 auto;
-  text-decoration: none;
-  color: white;
-  font-weight: bold;
-  background-color: gray
-
-}
- a:hover{
-  text-decoration: none;
-  background-color: #66CCFF;
-}
-
-
-.deleter{
-  margin-left: 5px;
-  padding: 2px 7px;
-  border: black solid 1px;
-  border-radius: 12px;
-  color: black;
-  text-decoration: none;
-}
-.deleter:hover{
-  background-color: rgba(200, 0, 0, .7);
-}
-
-
-.song {
-  border: black 1px solid;
-  text-align: center;
-  padding: 0 20px;
-}
-.song:hover{
-  background-color: rgba(0, 200, 0, 0.3);
-}
-
-</style>
+<link rel="stylesheet" href="smokeysongs.css">
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 <meta charset="utf-8">
@@ -68,22 +13,25 @@ li{
 
 <!--start of body-->
 <body>
+  <div id="header">
+    <h1>Smokey Brights</h1>
+    <h2>Honeybee Nicotine</h2>
+  </div>
+
+  <div id="img-float-right">
+      <img src="http://orig08.deviantart.net/854e/f/2014/031/6/5/cigarette_smoking_bee_by_allasca-d74j37r.jpg" height="200px">
+  </div>
+
+  <ol>
+    <!--li elements to be added in js-->
+  </ol>
+
+  <div class="center">
+    <a href="#" id="reset">R E S E T</a>
+  </div>
   
-<h1>Smokey Brights</h1>
-<h2>Honeybee Nicotine</h2>
-
-<ol>
-  <!--li elements to be added in js-->
-</ol>
-
-<div class="center">
-<a href="#" id="reset">R E S E T</a>
-</div>
-
-
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
-
 <script type="text/javascript">
 //list of songs for new album
 var songList = [
