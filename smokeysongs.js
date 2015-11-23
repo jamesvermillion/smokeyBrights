@@ -1,7 +1,8 @@
+
 //list of songs for new album
 var songList = ["It's in Demand", "Baby Big Shot", "Start Wearing Black",
     "Stick Man", "Bad Blood", "Ugly Evergreen", "Haller Lake",
-    "Horde of Angels", "Desiree", "Be a Man", "These Things Happen",
+    "Horde of Angels", "Desiree", "Be a Man", "A Soul, a Solo",
     "LSDirty Beach", "Not Enough Time"
 ];
 //var for list ul

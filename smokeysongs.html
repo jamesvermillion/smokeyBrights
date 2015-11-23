@@ -14,12 +14,17 @@
 <!--start of body-->
 <body>
   <div id="header">
-    <h1>Smokey Brights</h1>
-    <h2>Honeybee Nicotine</h2>
+    
+    <div class="smokey">
+      <h1>Smokey Brights</h1>
+    </div>
+    <div class="honeybee">
+      <h3>"Honeybee Nicotine"</h3>
+    </div>
   </div>
 
   <div id="img-float-right">
-      <img src="http://orig08.deviantart.net/854e/f/2014/031/6/5/cigarette_smoking_bee_by_allasca-d74j37r.jpg" height="200px">
+      <img src="smokingbee.jpg" height="200px">
   </div>
 
   <ol>
@@ -32,68 +37,8 @@
   
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
-<script type="text/javascript">
-//list of songs for new album
-var songList = [
-  "It's in Demand",
-  "Baby Big Shot",
-  "Start Wearing Black",
-  "Stick Man",
-  "Bad Blood",
-  "Ugly Evergreen",
-  "Haller Lake",
-  "Horde of Angels",
-  "Desiree",
-  "Be a Man",
-  "These Things Happen",
-  "LSDirty Beach",
-  "Not Enough Time"
-];
-//var for list ul
-var $list = $('ol');
-
-//populate the list
-var populateList = function(songs) {
-  for (var i = 0; i < songs.length; i++) {
-    $list.append('<li><span class="song">' + songs[i] + '</span><a href="#" class="deleter">X</a></li>');
-    
-    $('a.deleter').on('click', function(e){
-    e.preventDefault();
-    $(this).parent().remove();
-  });
-  }
-}
-
-var resetList = function(){
-  //D E S T R O Y LIST
-  $list.children().remove();
-  //REBUILD LIST!
-  populateList(songList);
-}
-
-$(document).ready(function() {
-
-  populateList(songList);
-
-  //makes the list sortable
-  $list.sortable();
-  $list.disableSelection();
-
-  
-  //click the x delete the song
-  $('a.deleter').on('click', function(e){
-    e.preventDefault();
-    $(this).parent().remove();
-  });
-  
-  $('#reset').on('click', function(){
-    resetList();  
-  });
-  
-  
-  
-});
-</script>
+<script src="punch.js"></script>
+<script src="smokeysongs.js"></script>
 
 </body>
 </html>
